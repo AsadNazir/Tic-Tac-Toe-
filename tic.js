@@ -95,6 +95,7 @@ function modal_btn() {
     count = arguments[0];
     let background = document.querySelector(`.tic`);
     background.style.filter = `blur(0px)`;
+    background.style.pointerEvents = `all`;;
     let Modal = document.querySelector(`.modal`);
     Modal.style.transfrom = `translateX(-50%) translateY(-50%) scale(0.3)`;
     Modal.style.display = `none`;
@@ -107,6 +108,7 @@ function modal_btn() {
 function show_modal() {
     let background = document.querySelector(`.tic`);
     background.style.filter = `blur(8px)`;
+    background.style.pointerEvents = `none`;;
     let Modal = document.querySelector(`.modal`);
     let text = document.querySelector(`#Modal_text`);
     text.innerHTML = `${arguments[0]}`;

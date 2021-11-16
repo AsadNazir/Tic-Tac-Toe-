@@ -2,7 +2,7 @@
 body {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 97vh;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -14,7 +14,6 @@ body {
     place-items: center;
     height: clamp(200px, 45vh, 700px);
     width: clamp(200px, 45vh, 700px);
-    ;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -52,7 +51,7 @@ body {
     position: absolute;
     top: 10%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 3vw, 3.7rem);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -96,6 +95,11 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.3);
     transition: all 0.3s ease-in-out;
+}
+
+.Select:hover {
+    background-color: rgb(219, 2, 2);
+    cursor: pointer;
 }
 
 
